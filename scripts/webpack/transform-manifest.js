@@ -15,7 +15,7 @@ function transformManifest(assets, appVersion) {
     const dynamicChunkGroups = groupBy(dynamicChunks, chunk => 
         extname(chunk).replace(/^\./, '')
     );
-
+    console.log('BNK');
     return {
         version: 2,
         appVersion,

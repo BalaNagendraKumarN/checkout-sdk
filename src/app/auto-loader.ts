@@ -19,6 +19,7 @@ function isCustomCheckoutWindow(window: Window): window is CustomCheckoutWindow 
 }
 
 (async function autoLoad() {
+
     if (!isCustomCheckoutWindow(window)) {
         throw new Error('Checkout config is missing.');
     }
@@ -39,4 +40,5 @@ function isCustomCheckoutWindow(window: Window): window is CustomCheckoutWindow 
     } else if (checkoutId) {
         renderCheckout({ ...appProps, checkoutId });
     }
+    
 })();

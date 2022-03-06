@@ -88,7 +88,7 @@ const AddressSelectMenu: FunctionComponent<AddressSelectProps> = ({
         </li>
         { addresses.map(address => (
             <li
-                className="dropdown-menu-item dropdown-menu-item--select"
+                className="dropdown-menu-item dropdown-menu-item--select clickTax"
                 key={ address.id }
             >
                 <a href="#" onClick={ preventDefault(() => onSelectAddress(address)) }>
@@ -105,7 +105,8 @@ const AddressSelectButton: FunctionComponent<AddressSelectButtonProps> = ({
     selectedAddress,
 }) => (
     <a
-        className="button dropdown-button dropdown-toggle--select"
+        className="button dropdown-button dropdown-toggle--select taxClick"
+        data-taxdata={ selectedAddress?.postalCode }
         href="#"
         id="addressToggle"
         onClick={ preventDefault() }

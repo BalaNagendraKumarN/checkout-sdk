@@ -347,6 +347,7 @@ class Checkout extends Component<CheckoutProps & WithCheckoutProps & WithLanguag
                         />
                     </div>) }
             >
+
                 <LazyContainer>
                     <Shipping
                         cartHasChanged={ hasCartChanged }

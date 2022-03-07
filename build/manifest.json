@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "appVersion": "dev",
+  "dynamicChunks": {
+    "js": [
+      "billing.js",
+      "cart-summary-drawer.js",
+      "cart-summary.js",
+      "cart-summary~cart-summary-drawer~order-summary~order-summary-drawer.js",
+      "customer.js",
+      "order-summary-drawer.js",
+      "order-summary.js",
+      "payment.js",
+      "shipping.js",
+      "translations-de.js",
+      "translations-es-mx.js",
+      "translations-es.js",
+      "translations-fr.js",
+      "translations-it.js",
+      "translations-nl.js",
+      "translations-pt-br.js",
+      "translations-pt.js",
+      "translations-sv.js"
+    ],
+    "svg": [
+      "static/card.svg"
+    ],
+    "png": [
+      "static/powered_by_google_on_white.png"
+    ]
+  },
+  "js": [
+    "runtime.js",
+    "polyfill~checkout.js",
+    "transients~checkout.js",
+    "sentry~checkout.js",
+    "vendors~checkout.js",
+    "checkout.js"
+  ]
+}

@@ -40,5 +40,4 @@ function isCustomCheckoutWindow(window: Window): window is CustomCheckoutWindow 
     } else if (checkoutId) {
         renderCheckout({ ...appProps, checkoutId });
     }
-    
 })();

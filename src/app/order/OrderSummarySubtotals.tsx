@@ -32,7 +32,7 @@ const OrderSummarySubtotals: FunctionComponent<OrderSummarySubtotalsProps> = ({
     coupons,
     onRemovedGiftCertificate,
     onRemovedCoupon,
-}) => { 
+}) => {
     return (<Fragment>
         <OrderSummaryPrice
             amount={ subtotalAmount }

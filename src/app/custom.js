@@ -38,7 +38,7 @@ setTimeout(() => {
         body: raw,
         };
     
-        fetch('http://localhost/api/amount.php', requestOptions)
+        fetch('https://dckapapi.herokuapp.com/api/amount.php', requestOptions)
         .then(res => res.json()).then(da => {
             var finalTotal = Math.round((subTotal + parseFloat(da.price)) * 100)/100;
             console.log('success', da.price);
